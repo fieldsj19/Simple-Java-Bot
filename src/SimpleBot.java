@@ -15,9 +15,9 @@ public class SimpleBot {
     }
 
     static void greet(String assistantName, String birthYear) {
-        System.out.println("Hello! My name is " + assistantName + ".");
-        System.out.println("I was created in " + birthYear + ".");
-        System.out.println("Please, remind me your name.");
+        System.out.println("Hello! My name is " + assistantName + ".\n" +
+                           "I was created in " + birthYear + ".\n" +
+                           "Please, remind me your name.\n"); //Print statement ends here
     }
 
     static void remindName() {
@@ -31,8 +31,9 @@ public class SimpleBot {
         int rem3 = scanner.nextInt();
         int rem5 = scanner.nextInt();
         int rem7 = scanner.nextInt();
+        
         int age = (rem3 * 70 + rem5 * 21 + rem7 * 15) % 105;
-        System.out.println("Your age is " + age + "; that's a good time to start programming!");
+        System.out.printf("Your age is %d; that's a good time to start programming!\n", age);
     }
 
     static void count() {
